@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+    background-size: cover; /* Mengatur agar gambar latar belakang menyesuaikan ukuran layar tanpa di-zoom */
+
+    
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-box input[type="text"] {
+    width: 100%;
+    padding: 10px 40px 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    outline: none;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    cursor: pointer;
+}
+
+.search-box input[type="text"]::placeholder {
+    color: #999;
+    font-size: 16px;
+}
+
+.search-box input[type="text"]:focus::placeholder {
+    color: transparent;
+}
+
+/*------------ Login container ------------*/
+
+.box-area{
+    width: 930px;
+}
+
+/*------------ Right box ------------*/
+
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+
+/*------------ Custom Placeholder ------------*/
+
+::placeholder{
+    font-size: 16px;
+}
+
+
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px){
+
+     .box-area{
+        margin: 0 10px;
+
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
+
+}
+
+/*------------ For detail product------------*/
+
+.icon-hover:hover {
+    border-color: #B00303 !important;
+    background-color: white !important;
+    color: #B00303 !important;
+  }
+  
+  .icon-hover:hover i {
+    color: #B00303 !important;
+  }
+
+.btn-merah {
+    background-color: #B00303; /* Ganti dengan warna merah yang Anda inginkan */
+    color: #fff; /* Mengatur warna teks menjadi putih */
+}
+
+.bg-merah{
+    background-color: #B00303 !important; /* Ganti dengan warna merah yang Anda inginkan */
+}
+
+.bg-pink{
+    background-color: #FCF7F7;
+}
